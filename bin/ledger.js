@@ -20,9 +20,15 @@ program
     const rows = await buildLedger();
     console.table(rows, ['title', 'state', 'funded', 'refundedAmount', 'fee', 'check']);
     const bad = rows.filter((r) => r.check !== 'verified');
-    console.log(
+        console.log(
       bad.length ? `${bad.length} task(s) need attention.` : 'All tasks reconcile on-chain.'
     );
+        const recoverable = rows.filter((r) => r.state === 'expired - refundable');
+    if (recoverable.length) {
+      console.log(
+        `${recoverable.length} expired task(s) can be refunded: ${sum(recoverable, 'funded')} USDC recoverable.`
+      );
+    }
   });
 
 program
