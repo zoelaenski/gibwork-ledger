@@ -120,8 +120,24 @@ Then ask: "Which of my Gibwork bounties are still open, and does everything reco
 
 ## Demo
 
-- Demo video: _link to be added_
-- Screenshots: _to be added in `docs/`_
+- Demo video: https://drive.google.com/file/d/1EhfT0YRZYYBpyPkn5il_8av6Fs4bAhkV/view?usp=drivesdk
+
+The demo shows the CLI catching an expired task with 1 USDC still locked, the refund being issued, and the ledger reconciling it, then the same ledger queried in plain English from Claude Desktop through MCP.
+
+### Screenshots
+
+**CLI `verify`: an expired task is flagged with recoverable funds**
+
+![verify](docs/01-verify-before.png)
+
+**CLI `summary`**
+
+![summary](docs/02-summary-before.png)
+
+**MCP: asking Claude Desktop about the ledger**
+
+![Claude Desktop](docs/03-claude-desktop-before.png)
+
 
 ## Project structure
 
