@@ -1,0 +1,22 @@
+{
+  "name": "gibwork-ledger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@gibwork/cli": "^0.2.4",
+    "@gibwork/sdk": "^0.2.0",
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "@solana/web3.js": "^1.99.0",
+    "commander": "^15.0.0",
+    "dotenv": "^18.0.5",
+    "zod": "^4.6.5"
+  }
+}
